@@ -1,0 +1,19 @@
+task_id: task_001
+category: bug_fix
+input: |
+  Fix the bug in the `greet` function. When name is empty or None, it should return "Hello, Guest!" instead of raising.
+context:
+  file: greeting.py
+  snippet: |
+    def greet(name):
+        return f"Hello, {name}!"
+ground_truth:
+  solution: |
+    def greet(name):
+        if not name:
+            return "Hello, Guest!"
+        return f"Hello, {name}!"
+rubric:
+  - "Handles None and empty string"
+  - "Returns 'Hello, Guest!' for missing name"
+  - "No unnecessary changes"

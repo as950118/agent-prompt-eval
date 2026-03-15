@@ -1,0 +1,16 @@
+task_id: task_008
+category: bug_fix
+input: |
+  Fix the off-by-one error: the function should return the number of elements that are strictly less than x, not less-or-equal.
+context:
+  file: count_less.py
+  snippet: |
+    def count_less(arr, x):
+        return sum(1 for a in arr if a <= x)
+ground_truth:
+  solution: |
+    def count_less(arr, x):
+        return sum(1 for a in arr if a < x)
+rubric:
+  - "Uses strict less-than (<) not less-or-equal (<=)"
+  - "Works for empty array"

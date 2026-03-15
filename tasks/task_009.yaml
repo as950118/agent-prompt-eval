@@ -1,0 +1,17 @@
+task_id: task_009
+category: explanation
+input: |
+  What is the time and space complexity of this function? Answer in one line each (e.g. Time: O(n), Space: O(1)).
+context:
+  file: algo.py
+  snippet: |
+    def find_dup(arr):
+        seen = set()
+        for x in arr:
+            if x in seen:
+                return x
+            seen.add(x)
+        return None
+rubric:
+  - "Time complexity correct (O(n) or similar)"
+  - "Space complexity correct (O(n) for set)"

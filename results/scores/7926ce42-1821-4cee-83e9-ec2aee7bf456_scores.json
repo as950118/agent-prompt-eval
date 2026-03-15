@@ -1,0 +1,14 @@
+[
+  {
+    "task_id": "task_006",
+    "model_id": "gpt-4o",
+    "rule_id": "minimal",
+    "run_id": "7926ce42-1821-4cee-83e9-ec2aee7bf456",
+    "metric_name": "correctness",
+    "score": 0.0,
+    "judge_type": "rubric",
+    "details": {
+      "error": "No module named 'openai'"
+    }
+  }
+]

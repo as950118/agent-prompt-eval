@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Evaluation Dashboard</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 1rem 2rem; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ccc; padding: 0.4rem 0.8rem; text-align: left; }
+    th { background: #f0f0f0; }
+  </style>
+</head>
+<body>
+  <h1>Model × Rule Evaluation</h1>
+  <p>Aggregates by (model_id, rule_id). mean_score = average across tasks; p25/p75 = 25th/75th percentile.</p>
+  <table>
+    <thead><tr><th>Model</th><th>Rule</th><th>Metric</th><th>Mean</th><th>Std</th><th>N</th><th>P25</th><th>P75</th></tr></thead>
+    <tbody><tr><td>gpt-4o-mini</td><td>default</td><td>llm_judge</td><td>1.000</td><td>0.000</td><td>1</td><td>1.000</td><td>1.000</td></tr><tr><td>gpt-4o-mini</td><td>minimal</td><td>llm_judge</td><td>1.000</td><td>0.000</td><td>1</td><td>1.000</td><td>1.000</td></tr></tbody>
+  </table>
+</body>
+</html>

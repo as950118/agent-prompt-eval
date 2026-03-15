@@ -1,0 +1,17 @@
+task_id: task_010
+category: feature
+input: |
+  Implement a function `clamp(value, low, high)` that returns value clamped to [low, high]. If low > high, return low.
+context:
+  file: math_utils.py
+  snippet: "# math helpers"
+ground_truth:
+  solution: |
+    def clamp(value, low, high):
+        if low > high:
+            return low
+        return max(low, min(high, value))
+rubric:
+  - "Clamps to [low, high] when low <= high"
+  - "Returns low when low > high"
+  - "Handles int and float"

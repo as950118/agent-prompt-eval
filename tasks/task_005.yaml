@@ -1,0 +1,20 @@
+task_id: task_005
+category: bug_fix
+input: |
+  The function sometimes returns wrong result when list has duplicates. Fix it so the returned indices are correct for the two-sum problem (find two indices whose values sum to target).
+context:
+  file: two_sum.py
+  snippet: |
+    def two_sum(nums, target):
+        seen = {}
+        for i, x in enumerate(nums):
+            if target - x in seen:
+                return [seen[target - x], i]
+            seen[x] = i
+        return []
+ground_truth:
+  note: "Logic is correct; check edge cases like duplicate values and same index"
+rubric:
+  - "Correct indices for all cases"
+  - "Handles duplicates correctly"
+  - "O(n) time complexity preserved"

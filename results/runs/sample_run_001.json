@@ -1,0 +1,11 @@
+{
+  "run_id": "sample_run_001",
+  "task_id": "task_001",
+  "model_id": "gpt-4o-mini",
+  "rule_id": "default",
+  "rule_hash": "abc123",
+  "output": "```python\ndef greet(name):\n    if not name:\n        return \"Hello, Guest!\"\n    return f\"Hello, {name}!\"\n```",
+  "error": null,
+  "latency_sec": 1.5,
+  "token_usage": {"prompt_tokens": 100, "completion_tokens": 50}
+}

@@ -1,0 +1,20 @@
+task_id: task_002
+category: refactor
+input: |
+  Refactor this function to use a list comprehension instead of a for-loop. Keep the same behavior.
+context:
+  file: utils.py
+  snippet: |
+    def squares(n):
+        result = []
+        for i in range(n):
+            result.append(i * i)
+        return result
+ground_truth:
+  solution: |
+    def squares(n):
+        return [i * i for i in range(n)]
+rubric:
+  - "Uses list comprehension"
+  - "Output identical to original for same input"
+  - "No extra side effects"

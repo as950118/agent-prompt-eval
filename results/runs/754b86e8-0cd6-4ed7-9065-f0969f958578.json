@@ -1,0 +1,11 @@
+{
+  "run_id": "754b86e8-0cd6-4ed7-9065-f0969f958578",
+  "task_id": "task_007",
+  "model_id": "claude-sonnet",
+  "rule_id": "strict-style",
+  "rule_hash": "3e83332d21aa",
+  "output": "",
+  "error": "No module named 'anthropic'",
+  "latency_sec": 0.0010857998859137297,
+  "token_usage": {}
+}

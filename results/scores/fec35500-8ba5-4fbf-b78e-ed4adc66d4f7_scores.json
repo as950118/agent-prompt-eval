@@ -1,0 +1,14 @@
+[
+  {
+    "task_id": "task_009",
+    "model_id": "claude-sonnet",
+    "rule_id": "default",
+    "run_id": "fec35500-8ba5-4fbf-b78e-ed4adc66d4f7",
+    "metric_name": "correctness",
+    "score": 0.0,
+    "judge_type": "rubric",
+    "details": {
+      "error": "No module named 'anthropic'"
+    }
+  }
+]

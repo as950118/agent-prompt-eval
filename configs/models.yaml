@@ -1,0 +1,18 @@
+# Model configurations for evaluation.
+# Add your API keys via environment variables (e.g. OPENAI_API_KEY, ANTHROPIC_API_KEY).
+models:
+  - id: gpt-4o
+    provider: openai
+    model: gpt-4o
+    # api_key_env: OPENAI_API_KEY
+  - id: gpt-4o-mini
+    provider: openai
+    model: gpt-4o-mini
+  - id: claude-sonnet
+    provider: anthropic
+    model: claude-sonnet-4-20250514
+  # - id: codestral
+  #   provider: openai  # or mistral
+  #   model: codestral/latest
+
+default_model: gpt-4o-mini

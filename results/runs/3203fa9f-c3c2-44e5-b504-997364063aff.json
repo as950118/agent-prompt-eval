@@ -1,0 +1,11 @@
+{
+  "run_id": "3203fa9f-c3c2-44e5-b504-997364063aff",
+  "task_id": "task_006",
+  "model_id": "gpt-4o-mini",
+  "rule_id": "strict-style",
+  "rule_hash": "3e83332d21aa",
+  "output": "",
+  "error": "No module named 'openai'",
+  "latency_sec": 0.0016306000761687756,
+  "token_usage": {}
+}

@@ -1,0 +1,21 @@
+task_id: task_006
+category: feature
+input: |
+  Add input validation to `parse_age`. It should accept positive integers only; otherwise return None and do not raise.
+context:
+  file: user.py
+  snippet: |
+    def parse_age(s):
+        return int(s)
+ground_truth:
+  solution: |
+    def parse_age(s):
+        try:
+            n = int(s)
+            return n if n > 0 else None
+        except (ValueError, TypeError):
+            return None
+rubric:
+  - "Returns None for non-positive or invalid input"
+  - "Returns int for positive integer strings"
+  - "Does not raise"

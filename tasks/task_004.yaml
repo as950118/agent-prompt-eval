@@ -1,0 +1,16 @@
+task_id: task_004
+category: explanation
+input: |
+  In one short paragraph, explain what this code does and when you would use it.
+context:
+  file: snippet.py
+  snippet: |
+    from functools import lru_cache
+    @lru_cache(maxsize=128)
+    def fib(n):
+        if n < 2: return n
+        return fib(n-1) + fib(n-2)
+rubric:
+  - "Mentions memoization/caching"
+  - "Mentions Fibonacci"
+  - "Explains use case (e.g. repeated calls, recursion)"

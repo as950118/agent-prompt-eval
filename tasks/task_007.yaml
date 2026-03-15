@@ -1,0 +1,23 @@
+task_id: task_007
+category: refactor
+input: |
+  Replace the nested if-else with a dict lookup or match. Behavior must stay the same.
+context:
+  file: handler.py
+  snippet: |
+    def get_status(code):
+        if code == 200:
+            return "OK"
+        elif code == 404:
+            return "Not Found"
+        elif code == 500:
+            return "Server Error"
+        else:
+            return "Unknown"
+ground_truth:
+  solution: |
+    def get_status(code):
+        return {200: "OK", 404: "Not Found", 500: "Server Error"}.get(code, "Unknown")
+rubric:
+  - "Uses dict or match, no long if-else"
+  - "Same return values for 200, 404, 500, other"

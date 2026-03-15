@@ -1,0 +1,15 @@
+task_id: task_003
+category: feature
+input: |
+  Add a function `is_palindrome(s: str) -> bool` that returns True if the string is a palindrome (ignoring case and non-alphanumeric chars). Example: "A man, a plan, a canal: Panama" -> True.
+context:
+  file: string_utils.py
+  snippet: "# string utilities"
+ground_truth:
+  hints:
+    - "Normalize: lower case, keep only alphanumeric"
+    - "Compare with reversed string or two pointers"
+rubric:
+  - "Ignores case"
+  - "Ignores non-alphanumeric characters"
+  - "Correct for empty/single-char strings"

@@ -1,0 +1,64 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python Debugger: Django",
+      "type": "debugpy",
+      "request": "launch",
+      "args": [
+        "runserver"
+      ],
+      "django": true,
+      "autoStartBrowser": false,
+      "program": "${workspaceFolder}\\auto-trade\\manage.py"
+    },
+    {
+      "name": "Django: runserver (auto-trade)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/auto-trade/manage.py",
+      "args": [
+        "runserver"
+      ],
+      "django": true,
+      "cwd": "${workspaceFolder}/auto-trade",
+      "env": {
+        "DJANGO_SETTINGS_MODULE": "autotrade.settings"
+      },
+      "justMyCode": false
+    },
+    {
+      "name": "Django: runserver (0.0.0.0:8000)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/auto-trade/manage.py",
+      "args": [
+        "runserver",
+        "0.0.0.0:8000"
+      ],
+      "django": true,
+      "cwd": "${workspaceFolder}/auto-trade",
+      "env": {
+        "DJANGO_SETTINGS_MODULE": "autotrade.settings"
+      },
+      "justMyCode": false
+    },
+    {
+      "name": "Django: runserver_plus (https://0.0.0.0:8000)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/auto-trade/manage.py",
+      "args": [
+        "runserver_plus",
+        "0.0.0.0:8000",
+        "--cert-file cert"
+      ],
+      "django": true,
+      "cwd": "${workspaceFolder}/auto-trade",
+      "env": {
+        "DJANGO_SETTINGS_MODULE": "autotrade.settings"
+      },
+      "justMyCode": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "run_id": "sample_run_002",
+  "task_id": "task_002",
+  "model_id": "gpt-4o-mini",
+  "rule_id": "minimal",
+  "rule_hash": "def456",
+  "output": "```python\ndef squares(n):\n    return [i * i for i in range(n)]\n```",
+  "error": null,
+  "latency_sec": 1.2,
+  "token_usage": {"prompt_tokens": 80, "completion_tokens": 30}
+}

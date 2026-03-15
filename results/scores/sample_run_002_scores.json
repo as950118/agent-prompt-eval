@@ -1,0 +1,26 @@
+[
+  {
+    "task_id": "task_002",
+    "model_id": "gpt-4o-mini",
+    "rule_id": "minimal",
+    "run_id": "sample_run_002",
+    "metric_name": "rubric_score",
+    "score": 1.0,
+    "judge_type": "rubric",
+    "details": {
+      "rubric_hits": 3,
+      "rubric_total": 3,
+      "details": [
+        {
+          "ground_truth_overlap": 1.0
+        },
+        {
+          "Uses list comprehension": true
+        },
+        {
+          "Output identical to original for same input": true
+        }
+      ]
+    }
+  }
+]

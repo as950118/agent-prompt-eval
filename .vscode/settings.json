@@ -1,0 +1,17 @@
+{
+  // ========== Django (auto-trade) 실행/개발 설정 ==========
+  // 터미널 기본 작업 디렉터리: auto-trade에서 python manage.py 실행 가능
+  "terminal.integrated.cwd": "${workspaceFolder}",
+
+  // Python이 auto-trade 앱/모듈을 인식하도록 경로 추가
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/auto-trade"
+  ],
+
+  // Django 설정 모듈 (디버깅/테스트 시 사용)
+  "python.envFile": "${workspaceFolder}/.env",
+
+  // auto-trade 가상환경 사용 (터미널 열 때 자동 activate)
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+  "python.terminal.activateEnvironment": true
+}
